@@ -1,0 +1,18 @@
+a#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int a;
+
+	a = rename("The address of the file with the current name","The address of the file with the new name");
+	if(a == 0)
+	{
+		printf("\nOK :)");
+	}
+	else
+	{
+		printf("\nNO :(");
+	}
+	return 0;
+}
